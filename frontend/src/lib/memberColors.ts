@@ -44,9 +44,9 @@ export const MEMBER_COLORS: Record<string, string> = {
   "鈴木花梨":   "#34D399", // ミントグリーン
   "高梨ゆな":   "#7DD3FC", // 水色
   "中山こはく": "#9CA3AF", // シルバー
-  "萩田そら":   "#EF4444", // 赤
+  "萩田そら":   "#A78BFA", // パープル
   "森田あみ":   "#F9A8D4", // ピンク
-  "山本るしあ": "#A78BFA", // パープル
+  "山本るしあ": "#EF4444", // 赤
 }
 
 export function getMemberColor(name: string): string {
