@@ -3,8 +3,8 @@ import '@/styles/globals.css'
 import { Sidebar } from '@/components/Sidebar'
 
 export const metadata: Metadata = {
-  title: 'Idol News Tracker',
-  description: 'アイドル最新情報収集プラットフォーム',
+  title: 'KAWAII LAB. News Tracker',
+  description: 'KAWAII LAB. 最新情報収集プラットフォーム',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
