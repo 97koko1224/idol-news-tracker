@@ -1,0 +1,254 @@
+settings:
+  collect_time: "08:00"        # 毎日の収集時刻 (HH:MM, Asia/Tokyo)
+  timezone: "Asia/Tokyo"
+  max_items_per_source: 50
+  retention_days: 90
+
+# KAWAII LAB. 所属グループ・メンバー全員
+groups:
+  - name: "FRUITS ZIPPER"
+    slug: "fruits-zipper"
+    keywords:
+      - "FRUITS ZIPPER"
+      - "フルーツジッパー"
+    twitter_accounts:
+      - "FRUITSZIPPER_"
+    youtube_channel_ids:
+      - "UCQG8tNnV4hKetLhMb4MopHQ"   # FRUITS ZIPPER 公式
+      - "UCW8Q9LBGGBgK6a-u0C0h95A"   # KAWAII LAB. 公式
+    rss_feeds:
+      - url: "https://news.google.com/rss/search?q=FRUITS+ZIPPER&hl=ja&gl=JP&ceid=JP:ja"
+        filter_keywords: []
+      - url: "https://news.google.com/rss/search?q=%E3%83%95%E3%83%AB%E3%83%BC%E3%83%84%E3%82%B8%E3%83%83%E3%83%91%E3%83%BC&hl=ja&gl=JP&ceid=JP:ja"
+        filter_keywords: []
+    official_sites:
+      - url: "https://fruitszipper.asobisystem.com/news/1/"
+        scraper: "asobisystem"
+    members:
+      - name: "月足天音"
+        reading: "つきあしあまね"
+        keywords: ["月足天音", "つきあしあまね", "あまねき", "Tsukiashi Amane"]
+        twitter_account: ""
+      - name: "鎮西寿々歌"
+        reading: "ちんぜいすずか"
+        keywords: ["鎮西寿々歌", "ちんぜいすずか", "おすず", "Chinzei Suzuka"]
+        twitter_account: ""
+      - name: "櫻井優衣"
+        reading: "さくらいゆい"
+        keywords: ["櫻井優衣", "さくらいゆい", "ゆいちゃん", "Sakurai Yui"]
+        twitter_account: ""
+      - name: "仲川瑠夏"
+        reading: "なかがわるな"
+        keywords: ["仲川瑠夏", "なかがわるな", "るなぴ", "Nakagawa Runa"]
+        twitter_account: ""
+      - name: "真中まな"
+        reading: "まなかまな"
+        keywords: ["真中まな", "まなかまな", "まなふぃー", "Manaka Mana"]
+        twitter_account: ""
+      - name: "松本かれん"
+        reading: "まつもとかれん"
+        keywords: ["松本かれん", "まつもとかれん", "まつかれ", "かれんたん", "Matsumoto Karen"]
+        twitter_account: ""
+      - name: "早瀬ノエル"
+        reading: "はやせのえる"
+        keywords: ["早瀬ノエル", "はやせのえる", "のえちゃん", "Hayase Noel"]
+        twitter_account: ""
+
+  - name: "CANDY TUNE"
+    slug: "candy-tune"
+    keywords:
+      - "CANDY TUNE"
+      - "キャンディチューン"
+    twitter_accounts:
+      - "CANDYTUNE_2023"
+    youtube_channel_ids:
+      - "UCU0PgOXf0lxzVxN2TLzMJkw"   # CANDY TUNE 公式
+      - "UCW8Q9LBGGBgK6a-u0C0h95A"   # KAWAII LAB. 公式
+    rss_feeds:
+      - url: "https://news.google.com/rss/search?q=CANDY+TUNE+%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB&hl=ja&gl=JP&ceid=JP:ja"
+        filter_keywords: []
+      - url: "https://news.google.com/rss/search?q=CANDY+TUNE+KAWAII+LAB&hl=ja&gl=JP&ceid=JP:ja"
+        filter_keywords: []
+    official_sites:
+      - url: "https://candytune.asobisystem.com/news/1/"
+        scraper: "asobisystem"
+    members:
+      - name: "宮野静"
+        reading: "みやのしずか"
+        keywords: ["宮野静", "みやのしずか", "しーちゃん", "Miyano Shizuka"]
+        twitter_account: ""
+      - name: "福山梨乃"
+        reading: "ふくやまりの"
+        keywords: ["福山梨乃", "ふくやまりの", "りのまる", "Fukuyama Rino"]
+        twitter_account: ""
+      - name: "桐原美月"
+        reading: "きりはらみづき"
+        keywords: ["桐原美月", "きりはらみづき", "きりちゃん", "Kirihara Mizuki"]
+        twitter_account: ""
+      - name: "南なつ"
+        reading: "みなみなつ"
+        keywords: ["南なつ", "みなみなつ", "なったん", "Minami Natsu"]
+        twitter_account: ""
+      - name: "小川奈々子"
+        reading: "おがわななこ"
+        keywords: ["小川奈々子", "おがわななこ", "なちこ", "Ogawa Nanako"]
+        twitter_account: ""
+      - name: "立花琴未"
+        reading: "たちばなことみ"
+        keywords: ["立花琴未", "たちばなことみ", "こっちゃん", "Tachibana Kotomi"]
+        twitter_account: ""
+      - name: "村川緋杏"
+        reading: "むらかわびびあん"
+        keywords: ["村川緋杏", "むらかわびびあん", "びびちゃん", "Murakawa Bibian"]
+        twitter_account: ""
+
+  - name: "SWEET STEADY"
+    slug: "sweet-steady"
+    keywords:
+      - "SWEET STEADY"
+      - "スウィートステディ"
+    twitter_accounts:
+      - "SWEET_STEADY_"
+    youtube_channel_ids:
+      - "UC5s_kUbxX3P1q6lmDgygD-w"   # SWEET STEADY 公式
+      - "UCW8Q9LBGGBgK6a-u0C0h95A"   # KAWAII LAB. 公式
+    rss_feeds:
+      - url: "https://news.google.com/rss/search?q=SWEET+STEADY+%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB&hl=ja&gl=JP&ceid=JP:ja"
+        filter_keywords: []
+      - url: "https://news.google.com/rss/search?q=SWEET+STEADY+KAWAII+LAB&hl=ja&gl=JP&ceid=JP:ja"
+        filter_keywords: []
+    official_sites:
+      - url: "https://sweetsteady.asobisystem.com/news/1/"
+        scraper: "asobisystem"
+    members:
+      - name: "音井結衣"
+        reading: "おといゆい"
+        keywords: ["音井結衣", "おといゆい", "おゆい", "Otoi Yui"]
+        twitter_account: ""
+      - name: "奥田彩友"
+        reading: "おくだあゆ"
+        keywords: ["奥田彩友", "おくだあゆ", "あゆちゃん", "Okuda Ayu"]
+        twitter_account: ""
+      - name: "栗田なつか"
+        reading: "くりたなつか"
+        keywords: ["栗田なつか", "くりたなつか", "なつか", "Kurita Natsuka"]
+        twitter_account: ""
+      - name: "塩川莉世"
+        reading: "しおかわりせ"
+        keywords: ["塩川莉世", "しおかわりせ", "りせぴ", "Shiokawa Rise"]
+        twitter_account: ""
+      - name: "庄司なぎさ"
+        reading: "しょうじなぎさ"
+        keywords: ["庄司なぎさ", "しょうじなぎさ", "なぎゅ", "Shoji Nagisa"]
+        twitter_account: ""
+      - name: "白石まゆみ"
+        reading: "しらいしまゆみ"
+        keywords: ["白石まゆみ", "しらいしまゆみ", "まゆみん", "Shiraishi Mayumi"]
+        twitter_account: ""
+      - name: "山内咲奈"
+        reading: "やまうちさきな"
+        keywords: ["山内咲奈", "やまうちさきな", "さきなてん", "Yamauchi Sakina"]
+        twitter_account: ""
+
+  - name: "CUTIE STREET"
+    slug: "cutie-street"
+    keywords:
+      - "CUTIE STREET"
+      - "キューティーストリート"
+    twitter_accounts:
+      - "CUTIESTREET_"
+    youtube_channel_ids:
+      - "UCEz-AFAg3EUKsxraad1puQA"   # CUTIE STREET 公式
+      - "UCW8Q9LBGGBgK6a-u0C0h95A"   # KAWAII LAB. 公式
+    rss_feeds:
+      - url: "https://news.google.com/rss/search?q=CUTIE+STREET+%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB&hl=ja&gl=JP&ceid=JP:ja"
+        filter_keywords: []
+    official_sites:
+      - url: "https://cutiestreet.asobisystem.com/news/1/"
+        scraper: "asobisystem"
+    members:
+      - name: "古澤里紗"
+        reading: "ふるさわりさ"
+        keywords: ["古澤里紗", "ふるさわりさ", "ふーりー", "Furusawa Risa"]
+        twitter_account: ""
+      - name: "佐野愛花"
+        reading: "さのあいか"
+        keywords: ["佐野愛花", "さのあいか", "あいか", "Sano Aika"]
+        twitter_account: ""
+      - name: "板倉可奈"
+        reading: "いたくらかな"
+        keywords: ["板倉可奈", "いたくらかな", "かなちゃん", "Itakura Kana"]
+        twitter_account: ""
+      - name: "増田彩乃"
+        reading: "ますだあやの"
+        keywords: ["増田彩乃", "ますだあやの", "あやの", "Masuda Ayano"]
+        twitter_account: ""
+      - name: "川本笑瑠"
+        reading: "かわもとえみる"
+        keywords: ["川本笑瑠", "かわもとえみる", "えみる", "Kawamoto Emiru"]
+        twitter_account: ""
+      - name: "梅田みゆ"
+        reading: "うめだみゆ"
+        keywords: ["梅田みゆ", "うめだみゆ", "みゆちゃん", "Umeda Miyu"]
+        twitter_account: ""
+      - name: "真鍋凪咲"
+        reading: "まなべなぎさ"
+        keywords: ["真鍋凪咲", "まなべなぎさ", "なべちゃん", "Manabe Nagisa"]
+        twitter_account: ""
+      - name: "桜庭遥花"
+        reading: "さくらばはるか"
+        keywords: ["桜庭遥花", "さくらばはるか", "ぱるたん", "Sakuraba Haruka"]
+        twitter_account: ""
+
+  - name: "MORE STAR"
+    slug: "more-star"
+    keywords:
+      - "MORE STAR"
+      - "モアスター"
+    twitter_accounts: []
+    youtube_channel_ids:
+      - "UCBkLxz038AbxBA8CMw6o9oA"   # MORE STAR 公式
+      - "UCW8Q9LBGGBgK6a-u0C0h95A"   # KAWAII LAB. 公式
+    rss_feeds:
+      - url: "https://news.google.com/rss/search?q=MORE+STAR+KAWAII+LAB&hl=ja&gl=JP&ceid=JP:ja"
+        filter_keywords: []
+    official_sites:
+      - url: "https://morestar.asobisystem.com/news/1/"
+        scraper: "asobisystem"
+    members:
+      - name: "新井心菜"
+        reading: "あらいここな"
+        keywords: ["新井心菜", "あらいここな", "ここにゃん", "Arai Kokona"]
+        twitter_account: ""
+      - name: "遠藤まりん"
+        reading: "えんどうまりん"
+        keywords: ["遠藤まりん", "えんどうまりん", "まりん", "Endo Marin"]
+        twitter_account: ""
+      - name: "笹原なな花"
+        reading: "ささはらななか"
+        keywords: ["笹原なな花", "ささはらななか", "ななか", "Sasahara Nanaka"]
+        twitter_account: "nanaka_KLM0707"
+      - name: "鈴木花梨"
+        reading: "すずきかりん"
+        keywords: ["鈴木花梨", "すずきかりん", "りんりん", "Suzuki Karin"]
+        twitter_account: "karin_KLM0910"
+      - name: "高梨ゆな"
+        reading: "たかなしゆな"
+        keywords: ["高梨ゆな", "たかなしゆな", "ゆな", "ゆなし", "Takanashi Yuna"]
+        twitter_account: ""
+      - name: "中山こはく"
+        reading: "なかやまこはく"
+        keywords: ["中山こはく", "なかやまこはく", "こはく", "Nakayama Kohaku"]
+        twitter_account: ""
+      - name: "萩田そら"
+        reading: "はぎたそら"
+        keywords: ["萩田そら", "はぎたそら", "そら", "Hagita Sora"]
+        twitter_account: ""
+      - name: "森田あみ"
+        reading: "もりたあみ"
+        keywords: ["森田あみ", "もりたあみ", "あみ", "Morita Ami"]
+        twitter_account: "ami_KLM0206"
+      - name: "山本るしあ"
+        reading: "やまもとるしあ"
+        keywords: ["山本るしあ", "やまもとるしあ", "るしあ", "Yamamoto Rushia"]
+        twitter_account: ""

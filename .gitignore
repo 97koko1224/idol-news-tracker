@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# 環境変数・機密情報
+backend/.env
+backend/*.db
+backend/*.sqlite3
+
+# Node.js
+node_modules/
+.next/
+frontend/.next/
+frontend/node_modules/
+
+# データベース
+backend/data/*.db
+backend/data/*.sqlite3
+
+# ログ・一時ファイル
+*.log
+nohup.out
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
