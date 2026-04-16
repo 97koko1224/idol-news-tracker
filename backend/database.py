@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import os
 from pathlib import Path
 
 from sqlalchemy import (
@@ -15,8 +16,9 @@ from sqlalchemy import (
 )
 from sqlalchemy.orm import DeclarativeBase, Session, relationship, sessionmaker
 
-DB_PATH = Path(__file__).parent / "data" / "idol_news.db"
-DB_PATH.parent.mkdir(exist_ok=True)
+_default_db = Path(__file__).parent / "data" / "idol_news.db"
+DB_PATH = Path(os.environ.get("DB_PATH", str(_default_db)))
+DB_PATH.parent.mkdir(parents=True, exist_ok=True)
 
 engine = create_engine(
     f"sqlite:///{DB_PATH}",
