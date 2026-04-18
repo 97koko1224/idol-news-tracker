@@ -21,7 +21,7 @@ export function StatsCards() {
   const topGroup = data.by_group[0]
 
   return (
-    <div className="mb-6 grid grid-cols-3 gap-3">
+    <div className="mb-6 grid grid-cols-1 sm:grid-cols-3 gap-3">
       <StatCard label="今日のニュース" value={data.items_today} />
       <StatCard label="今週のニュース" value={data.items_this_week} />
       <StatCard label="最も活発なグループ" value={topGroup?.name ?? '-'} />

@@ -63,9 +63,9 @@ export function NewsFeed({ groupSlug, initialMember = '' }: Props) {
   return (
     <div>
       {/* フィルターバー */}
-      <div className="mb-4 flex flex-wrap items-center gap-3">
+      <div className="mb-4 space-y-2">
         {/* ソースタブ */}
-        <div className="flex gap-1">
+        <div className="flex flex-wrap gap-1">
           {SOURCE_TABS.map((tab) => (
             <button
               key={tab.value}
@@ -81,14 +81,10 @@ export function NewsFeed({ groupSlug, initialMember = '' }: Props) {
           ))}
         </div>
 
-        <div className="h-5 w-px bg-gray-200" />
-
-        {/* グループ選択（グループページ以外で表示） */}
-        {!groupSlug && groups && groups.length > 0 && (
-          <div className="flex items-center gap-2">
-            <label className="text-sm font-medium text-gray-700 whitespace-nowrap">
-              グループ
-            </label>
+        {/* グループ・メンバー選択 */}
+        <div className="flex flex-wrap items-center gap-2">
+          {/* グループ選択（グループページ以外で表示） */}
+          {!groupSlug && groups && groups.length > 0 && (
             <select
               value={groupFilter}
               onChange={(e) => handleGroupChange(e.target.value)}
@@ -101,32 +97,32 @@ export function NewsFeed({ groupSlug, initialMember = '' }: Props) {
                 </option>
               ))}
             </select>
-          </div>
-        )}
+          )}
 
-        {/* メンバー選択 */}
-        <MemberSelect
-          groupSlug={effectiveGroupSlug}
-          selectedMember={memberFilter}
-          onChange={handleMemberChange}
-        />
+          {/* メンバー選択 */}
+          <MemberSelect
+            groupSlug={effectiveGroupSlug}
+            selectedMember={memberFilter}
+            onChange={handleMemberChange}
+          />
 
-        {/* アクティブフィルターバッジ */}
-        {memberFilter && (() => {
-          const bg = getMemberColor(memberFilter)
-          const fg = getTextColor(bg)
-          return (
-            <span
-              className="flex items-center gap-1 rounded-full px-3 py-1 text-sm font-medium"
-              style={{ backgroundColor: bg, color: fg }}
-            >
-              {memberFilter}
-              <button onClick={() => handleMemberChange('')} className="ml-1 opacity-70 hover:opacity-100">
-                ×
-              </button>
-            </span>
-          )
-        })()}
+          {/* アクティブフィルターバッジ */}
+          {memberFilter && (() => {
+            const bg = getMemberColor(memberFilter)
+            const fg = getTextColor(bg)
+            return (
+              <span
+                className="flex items-center gap-1 rounded-full px-3 py-1 text-sm font-medium"
+                style={{ backgroundColor: bg, color: fg }}
+              >
+                {memberFilter}
+                <button onClick={() => handleMemberChange('')} className="ml-1 opacity-70 hover:opacity-100">
+                  ×
+                </button>
+              </span>
+            )
+          })()}
+        </div>
       </div>
 
       {/* 件数 */}
